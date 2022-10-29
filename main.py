@@ -4,11 +4,11 @@ import shutil
 import sys
 from random import randint
 
-creer_nouveau_dataset = False
-entrainement = False
+creer_nouveau_dataset = True
+entrainement = True
 test_performances = True
-nb_captchas = 10000
-nb_iter = 10000
+nb_captchas = 100
+nb_iter = 100
 pas_apprentissage: float = 0.01
 
 if __name__ == '__main__':
@@ -52,4 +52,5 @@ if __name__ == '__main__':
         chemins = os.listdir("venv/test_performances")
         test_pourcentage(chemins, True)
         # texte = [""]*50
-        # test_courbe(chemins, texte, True)
+        # test_courbe(chemins,
+        # texte, True)
